@@ -1,11 +1,12 @@
-# ds_Manisha_Ailani
 **Web3 Trader Behavior vs Market Sentiment**
-**Data Science Assignment – Hyperliquid Trading Analysis**
-**Project Overview**
+
+**Data Science Assignment – Hyperliquid Trading Team**
+
+**📌 Project Overview**
 
 This project analyzes how trader behavior and performance change under different market sentiment conditions using real trading data from Hyperliquid and the Crypto Fear & Greed Index.
 
-The goal is to understand how Fear, Greed, and Extreme market emotions influence:
+The goal is to understand how Fear, Greed, and Extreme emotions affect:
 
 Profitability
 
@@ -17,10 +18,10 @@ Buy vs Sell strategies
 
 Trader psychology
 
-This helps Web3 trading firms build sentiment-aware trading strategies.
+These insights help Web3 trading firms design sentiment-aware trading strategies.
 
-📂 Dataset Description
-1. Hyperliquid Trader Data
+**Datasets Used**
+**1. Hyperliquid Trader Data**
 
 Contains trade-level information such as:
 
@@ -38,9 +39,9 @@ Closed Profit & Loss (PnL)
 
 Each row represents one executed trade.
 
-2. Fear & Greed Index
+**2. Crypto Fear & Greed Index**
 
-Daily crypto market sentiment classified as:
+Provides daily crypto market sentiment:
 
 Extreme Fear
 
@@ -52,71 +53,69 @@ Greed
 
 Extreme Greed
 
-🛠 Data Processing Steps
+**Data Processing**
 
-Converted trade timestamps to datetime format
+The following steps were performed in the Google Colab notebook:
 
-Extracted trade date from each trade
+Converted trade timestamps to datetime
 
-Converted sentiment dates to datetime
+Extracted trade dates
 
-Merged both datasets by trade date
+Converted sentiment dates
 
-Removed all rows with missing values
+Merged trader data with sentiment data by date
 
-Created new behavioral and performance features
+Removed all missing values
 
-Grouped trades by market sentiment for analysis
+Engineered performance and risk features
 
-📈 Key Analyses Performed
-1️⃣ Profitability Analysis
+Performed sentiment-based analysis
 
-Compared average PnL across sentiment regimes.
+**Analyses Performed**
 
-2️⃣ Risk Analysis
+Profitability vs Market Sentiment
 
-Used trade size (USD) as a proxy for risk.
+Risk Analysis using Trade Size
 
-3️⃣ Win Rate Analysis
+Win Rate by Sentiment
 
-Calculated percentage of profitable trades per sentiment.
+Buy vs Sell (Long vs Short) Strategy Performance
 
-4️⃣ Buy vs Sell Strategy Analysis
+Behavioral Finance Check (Revenge Trading)
 
-Compared profitability of long (BUY) and short (SELL) positions under different sentiments.
+All visualizations are saved in the outputs/ folder.
 
-5️⃣ Behavioral Finance Check
+**Key Findings**
 
-Analyzed whether traders increase trade size after losses (revenge trading).
+Extreme Greed has the highest profitability and win rate
 
-🔍 Key Insights
+Fear periods show the highest risk-taking (largest trade sizes)
 
-Extreme Greed has the highest profit and win rate.
+Selling is more profitable during Greed, while Buying is more profitable during Fear
 
-Fear periods show the highest risk-taking (largest trade sizes).
+Traders do not increase trade size after losses → no evidence of revenge trading
 
-Selling is more profitable during Greed, while buying is more profitable during Fear.
-
-Traders do not show revenge trading behavior after losses.
-
-These findings show that market emotion strongly drives trading outcomes.
-
-📁 Project Structure
+**Project Structure**
 ds_manisha_ailani/
 │
-├── notebook_1.ipynb          # Complete analysis (Google Colab)
+├── notebook_1.ipynb
 ├── csv_files/
-│     └── final_merged_data.csv
 ├── outputs/
-│     ├── profit_analysis.png
-│     ├── risk_analysis.png
-│     ├── win_rate.png
-│     ├── strategy_analysis.png
-│     └── behavior_check.png
+│   ├── profit_analysis.png
+│   ├── risk_analysis.png
+│   ├── win_rate.png
+│   ├── strategy_analysis.png
+│   └── behavior_check.png
 ├── ds_report.pdf
 └── README.md
 
-▶ How to Run
+**Important Note on Data Files**
+
+Due to GitHub file size limits, large CSV files (merged and processed data) are generated dynamically inside the Google Colab notebook and are not stored in this repository.
+
+All data processing and outputs can be reproduced by running the notebook.
+
+**How to Run**
 
 Open notebook_1.ipynb in Google Colab
 
@@ -128,22 +127,10 @@ fear_greed_index.csv
 
 Run all cells
 
-Outputs will be generated in the outputs/ folder
+All results and graphs will be generated automatically
 
-💡 Why this matters for Web3 Trading
-
-Understanding how traders behave during Fear and Greed allows trading firms to:
-
-Optimize position sizing
-
-Control risk dynamically
-
-Build emotion-aware trading strategies
-
-Improve profitability and reduce losses
-
-👩‍💻 Author
+**Author**
 
 Manisha Ailani
-M.Sc. Statistics, Central University of Rajasthan
-Data Science & Web3 Trading Analytics
+M.Sc. Statistics
+Central University of Rajasthan
