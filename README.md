@@ -148,6 +148,11 @@ Run all cells
 All results and graphs will be generated automatically
 
 
+**Google collab notebook link**
+
+https://colab.research.google.com/drive/10GEYPeOMvMVw3Ljskx_PI-7qLfMB9STP?usp=sharing
+
+
 **Author**
 
 Manisha Ailani
