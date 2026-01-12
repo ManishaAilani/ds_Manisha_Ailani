@@ -151,5 +151,7 @@ All results and graphs will be generated automatically
 **Author**
 
 Manisha Ailani
+
 M.Sc. Statistics
+
 Central University of Rajasthan
